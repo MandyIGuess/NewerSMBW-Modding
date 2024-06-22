@@ -1,2 +1,8 @@
-# Full source code, not really needed in the repo since any modified code is included here anyways
+# Newer src, not really needed since modified code is included here anyways
 /Source
+
+# Release ZIP files
+/res/ZIP
+
+# Release exclusive README files
+/res/txt

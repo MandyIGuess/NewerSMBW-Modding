@@ -10,7 +10,7 @@ be mentioned in that feature's readme.
 > Do NOT ask me to port any code hacks to older versions of NewerSMBW.
 
 ## Full List of Features
-- None yet...
+- [Improved Level Nodes](/Improved-Level-Nodes): Color animations and fixed rotation for Newer's level nodes!
 
 ## Crediting and Usage
 If you want to use anything from this for your own projects, be sure to credit me for it (credit me as `MandyIGuess`).
