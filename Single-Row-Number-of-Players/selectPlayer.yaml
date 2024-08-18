@@ -1,0 +1,8 @@
+---
+source_files: [../src/selectPlayer.cpp]
+hooks:
+  - name: NewButtonFunctionality
+    type: branch_insn
+    branch_type: b
+    src_addr_pal: 0x807AC7A0
+    target_func: 'dSelectPlayer_c::newButtonFunctionality(void)'

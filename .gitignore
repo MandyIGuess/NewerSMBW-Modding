@@ -1,8 +1,3 @@
-# Newer src, not really needed since modified code is included here anyways
 /Source
-
-# Release ZIP files
-/res/ZIP
-
-# Release exclusive README files
-/res/txt
+/res
+.vscode
