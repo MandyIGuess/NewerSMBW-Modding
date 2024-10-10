@@ -1,0 +1,8 @@
+---
+source_files: [../src/gameOver.cpp]
+hooks:
+  - name: FixGameOverLetters
+    type: branch_insn
+    branch_type: b
+    src_addr_pal: 0x80788CA0
+    target_func: 'FixGameOverLetters(void *)'
