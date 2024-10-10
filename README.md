@@ -1,8 +1,8 @@
 # NewerSMBW-Modding
-This repo is for me to put all the stuff I've made for NewerSMBW. It'll mainly consist of bugfixes, improvements, and some new features. If you
+This repo is for me to put all the stuff I've made for NewerSMBW/NSMBWer+. It'll mainly consist of bugfixes, improvements, and some new features. If you
 find any issues or bugs (with the content here, not NewerSMBW bugs), report them in the Issues tab.
 
-The code hacks for this project were made with the `cw` branch of [NewerSMBW's GitHub][newer], and are intended to be used with v1.3.0 of the mod,
+The code hacks in this repo were made with the `cw` branch of [NewerSMBW's GitHub][newer], and are intended to be used with v1.3.0 of the mod,
 however some features may work in other versions, or in other non-Newer mods such as [NSMBWer+][nsmbwer]. If this is the case, it will be mentioned in
 that feature's readme.
 
@@ -17,7 +17,8 @@ Don't ask me to port any code hacks to older versions of NewerSMBW. Most hacks a
   <p></p>
 
   [Single-Row Number of Players](/Single-Row-Number-of-Players): Code hack that allows the 1 button on the Number of players screen to be on the same row as the others!
-  [Game Over Fix (for Modern MarioFont)](/Game-Over-Fix-For-Modern-MarioFont): Small hack that fixes the Game Over screen that use the modern MarioFont!
+  <br>
+  [Game Over Fix (for Modern MarioFont)](/Game-Over-Fix-For-Modern-MarioFont): Small hack that fixes the Game Over screen for mods that use the modern MarioFont!
 </details>
 
 ## Crediting and Usage
