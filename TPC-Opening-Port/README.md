@@ -11,7 +11,7 @@ If you find any bugs, issues, or have any questions, make an issue in the Issues
 
 ![Screenshot of the first scene of the opening, showing Peach's Castle at night.](/TPC-Opening-Port/image.png)
 
-For a video of this in-game, see this video for [NewerSMBW](https://youtu.be/MIpEEY4dcnI) and this one for [NSMBWer+](https://youtu.be/yuk37IsK4eU)!
+For a video of this in-game, see this video for [NewerSMBW](https://youtu.be/yuk37IsK4eU) and this one for [NSMBWer+](https://youtu.be/MIpEEY4dcnI)!
 
 ## Changes
 The biggest change is obviously support for NewerSMBW 1.30 and NSMBWer+!
