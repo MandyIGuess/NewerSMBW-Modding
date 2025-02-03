@@ -1,0 +1,19 @@
+---
+# Replaces Actor 508 EN_TARZANROPE (Sprite 183)
+
+source_files: [../src/opening.S, ../src/opening.cpp]
+hooks: 
+  - name: BuildOpening
+    type: add_func_pointer
+    src_addr_pal: 0x80B0A940
+    target_func: 'dScOpening_c::build(void)'
+
+  - name: DisableMusicSceneCheckShit
+    type: patch
+    addr_pal: 0x80069668
+    data: '4800001C' # Orig: 480000B0
+
+  - name: ChangeMovieID
+    type: patch
+    addr_pal: 0x809191C8
+    data: '386001FC' # Orig: 38600008

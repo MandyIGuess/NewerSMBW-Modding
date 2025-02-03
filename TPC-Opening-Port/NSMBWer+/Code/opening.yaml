@@ -1,0 +1,13 @@
+---
+source_files: [../src/opening.S, ../src/opening.cpp]
+hooks: 
+  - name: DisableMusicSceneCheckShit
+    type: patch
+    addr_pal: 0x80069668
+    data: '4800001C' # Orig: 480000B0
+
+  - name: ChangeMovieID
+    type: branch_insn
+    branch_type: bl
+    src_addr_pal: 0x809191D4
+    target_func: 'setOpeningScene(unsigned short, unsigned int, bool)'

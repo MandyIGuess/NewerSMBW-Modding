@@ -1,6 +1,6 @@
 # NewerSMBW-Modding
-This repo is for me to put all the stuff I've made for NewerSMBW/NSMBWer+. It'll mainly consist of bugfixes, improvements, and some new features. If you
-find any issues or bugs (with the content here, not NewerSMBW bugs), report them in the Issues tab.
+This repo is for me to put all the stuff I've made for NewerSMBW/NSMBWer+. It'll mainly consist of bugfixes, improvements, and some new
+features. If you find any issues or bugs (with the content here, not NewerSMBW bugs), report them in the Issues tab.
 
 The code hacks in this repo were made with the `cw` branch of [NewerSMBW's GitHub][newer], and are intended to be used with v1.3.0 of the mod,
 however some features may work in other versions, or in other non-Newer mods such as [NSMBWer+][nsmbwer]. If this is the case, it will be mentioned in
@@ -10,6 +10,7 @@ Don't ask me to port any code hacks to older versions of NewerSMBW. Most hacks a
 
 ## Full List of Features
 - [Improved Level Nodes](/Improved-Level-Nodes): Color animations and fixed rotation for Newer's level nodes!
+- [TPC Opening Port](/TPC-Opening-Port): Opening from NSMBW The Prankster Comets, ported to Newer 1.30 and NSMBWer+!
 <!-- - [Dynamic Koopatlas Lighting](/Dynamic-KP-Lighting): Koopatlas support for different lighting between maps/worlds! -->
 <!-- - [Retail Map HUD in Newer](/Retail-Map-Hud-In-Newer): Recreation of the retail game's World Map HUD in Koopatlas! -->
 - <details>
