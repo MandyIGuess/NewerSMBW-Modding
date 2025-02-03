@@ -24,11 +24,14 @@ However there were some other changes made:
 - And some other small fixes!
 
 # Editing the Opening
-The `PranksterToolbox.exe` tool included in the release can edit various file formats made for the mod, such as the Opening binary.
+The `PranksterToolbox.exe` tool can edit various file formats made for the mod, such as the Opening binary.
 To edit it, open the tool, select the Opening Editor, and in the window that opens, import the `Opening.bin` file. The options that
 the tool offers should be pretty straight-forward.
 
+
+It can be downloaded from [here][toolbox].
 Credits obviously go to RedStoneMatt/Asu-chan for making this tool!
+
 
 ## Installation Instructions
 First off, take the `Game` folder from the release and drop it onto your Riivolution patch, and it should prompt you to replace some files.
@@ -121,6 +124,7 @@ interfere with some mods that may replace those tracks. If you want these tracks
 Newer's MessageFont replaces the `:` character with a level node icon, so you may want to edit the font to add the symbol back,
 or remove the font entirely and use the retail MessageFont.
 
+[toolbox]: https://github.com/Asu-chan/NSMBWThePranksterComets/raw/refs/heads/clang-no-translations/PranksterToolbox/PranksterToolbox/bin/Release/PranksterToolbox.exe
 [moresfx]: https://github.com/Developers-Collective/NSMBW-Custom-Sprites/releases/tag/MoreSFX
 [bmg]: https://horizon.miraheze.org/wiki/Game_Text_Editing#BMG_Text_Editing
 [tpc]: https://drive.google.com/file/d/11UPNLxT45MTsbRYdXjAEgHRMXuQ9SKNd/view?usp=sharing
