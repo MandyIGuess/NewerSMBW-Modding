@@ -1,7 +1,7 @@
 # NSMBW: The Prankster Comets Opening Port
 This ports the opening/flipbook sequence from NSMBWTPC to Newer 1.30, as well as NSMBWer+!
 
-![Static Badge](https://img.shields.io/badge/Version-1.0.0-default)
+![Static Badge](https://img.shields.io/badge/Version-1.0.1-default)
 ![Static Badge](https://img.shields.io/badge/Supports-NewerSMBW%20(1.3.0)-maroon)
 ![Static Badge](https://img.shields.io/badge/Supports-NSMBWer+-DCDC73)
 ![Static Badge](https://img.shields.io/badge/Modifies-Cutscenes-EF6031)
@@ -123,6 +123,14 @@ interfere with some mods that may replace those tracks. If you want these tracks
 
 Newer's MessageFont replaces the `:` character with a level node icon, so you may want to edit the font to add the symbol back,
 or remove the font entirely and use the retail MessageFont.
+
+## Changelog
+
+### v1.0.1 (February 3rd, 2025)
+- Newer Port: Changed the actor ID that the opening replaces so it no longer interferes with the meteor sprite
+
+### v1.0.0 (February 2nd, 2025)
+- Initial release
 
 [toolbox]: https://github.com/Asu-chan/NSMBWThePranksterComets/raw/refs/heads/clang-no-translations/PranksterToolbox/PranksterToolbox/bin/Release/PranksterToolbox.exe
 [moresfx]: https://github.com/Developers-Collective/NSMBW-Custom-Sprites/releases/tag/MoreSFX
