@@ -13,6 +13,11 @@ If you find any bugs, issues, or have any questions, make an issue in the Issues
 
 For a video of this in-game, see this video for [NewerSMBW](https://youtu.be/yuk37IsK4eU) and this one for [NSMBWer+](https://youtu.be/MIpEEY4dcnI)!
 
+## Credits
+Credits go to the following people for the original assets:
+- RedStoneMatt/Asu-chan: Original TPC Opening, *Prankster Toolbox* tool
+- Hexagamer: Opening scene art
+
 ## Changes
 The biggest change is obviously support for NewerSMBW 1.30 and NSMBWer+!
 
@@ -30,8 +35,6 @@ the tool offers should be pretty straight-forward.
 
 
 It can be downloaded from [here][toolbox].
-Credits obviously go to RedStoneMatt/Asu-chan for making this tool!
-
 
 ## Installation Instructions
 First off, take the `Game` folder from the release and drop it onto your Riivolution patch, and it should prompt you to replace some files.
@@ -135,4 +138,4 @@ or remove the font entirely and use the retail MessageFont.
 [toolbox]: https://github.com/Asu-chan/NSMBWThePranksterComets/raw/refs/heads/clang-no-translations/PranksterToolbox/PranksterToolbox/bin/Release/PranksterToolbox.exe
 [moresfx]: https://github.com/Developers-Collective/NSMBW-Custom-Sprites/releases/tag/MoreSFX
 [bmg]: https://horizon.miraheze.org/wiki/Game_Text_Editing#BMG_Text_Editing
-[tpc]: https://drive.google.com/file/d/11UPNLxT45MTsbRYdXjAEgHRMXuQ9SKNd/view?usp=sharing
+[tpc]: https://github.com/Asu-chan/NSMBWThePranksterComets
