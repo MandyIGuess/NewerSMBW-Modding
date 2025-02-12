@@ -22,6 +22,13 @@ Don't ask me to port any code hacks to older versions of NewerSMBW. Most hacks a
   [Game Over Fix (for Modern MarioFont)](/Game-Over-Fix-For-Modern-MarioFont): Small hack that fixes the Game Over screen for mods that use the modern MarioFont!
 </details>
 
+- <details>
+  <summary>Miscellaneous Releases: Small, insignificant changes and features that don't have much use.</summary>
+  <p></p>
+
+  [Randomized Lighting](/Miscellaneous/Randomized-Lighting): Randomly selects the World Map and level lightings rather than choosing based on world/zone settings.
+</details>
+
 ## Crediting and Usage
 If you want to use anything from this for your own projects, be sure to credit me for it (credit me as `MandyIGuess`).
 

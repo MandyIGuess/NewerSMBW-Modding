@@ -1,0 +1,32 @@
+---
+source_files: [../src/randomLighting.cpp, ../src/randomLighting.S]
+hooks:
+  - name: RandomizeMapLighting
+    type: branch_insn
+    branch_type: b
+    src_addr_pal: 0x80927AC0
+    target_func: 'LoadWorldMapLighting(void *, int)'
+
+  - name: RandomizeMap3DLighting
+    type: branch_insn
+    branch_type: b
+    src_addr_pal: 0x80927B90
+    target_func: 'LoadWorldMapLighting(void *, int)'
+
+  - name: RandomizeMainMenuLighting
+    type: branch_insn
+    branch_type: b
+    src_addr_pal: 0x809193E0
+    target_func: 'LoadWorldMapLighting(void *, int)'
+
+  - name: RandomizeStageLighting
+    type: branch_insn
+    branch_type: b
+    src_addr_pal: 0x80926480
+    target_func: 'LoadStageLighting'
+
+  - name: RandomizeStageDOF
+    type: branch_insn
+    branch_type: b
+    src_addr_pal: 0x80089030
+    target_func: 'LoadStageDepthOfField(void)'
