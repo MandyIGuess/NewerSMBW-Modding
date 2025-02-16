@@ -23,6 +23,13 @@ Don't ask me to port any code hacks to older versions of NewerSMBW. Most hacks a
 </details>
 
 - <details>
+  <summary>Retail Map Improvements: Small improvements made to the retail map system.</summary>
+  <p></p>
+
+  [Start Node Directions](/Start-Node-Directions): Code hack allows Start Nodes to point up, right, left, or down!
+</details>
+
+- <details>
   <summary>Miscellaneous Releases: Small, insignificant changes and features that don't have much use.</summary>
   <p></p>
 

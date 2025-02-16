@@ -1,0 +1,14 @@
+---
+source_files: [../src/wm_start.S, ../src/wm_start.cpp]
+hooks:
+  - name: StartNodeDirections
+    type: branch_insn
+    branch_type: bl
+    src_addr_pal: 0x808E8198
+    target_func: 'StartNodeDirections'
+
+  - name: FixStartNodeIcon
+    type: branch_insn
+    branch_type: b
+    src_addr_pal: 0x80010D34
+    target_func: 'FixStartNodeIcon'
