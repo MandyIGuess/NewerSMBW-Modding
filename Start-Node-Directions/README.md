@@ -5,6 +5,8 @@ This allows the Start Nodes to point up, right, left, or down! The retail game o
 ![Static Badge](https://img.shields.io/badge/Supports-NSMBWer+-DCDC73)
 ![Static Badge](https://img.shields.io/badge/Modifies-World%20Maps-skyblue)
 
+For a video of this in-game, see [this YouTube video](https://youtu.be/ScL3NnMCN8c)!
+
 ## Changes
 This adds new textures to the Start Node model that point left and down. These can be displayed in-game by changing the last character of the 
 Start Node's bone name (`WxSy`) to a value from 0-3:
