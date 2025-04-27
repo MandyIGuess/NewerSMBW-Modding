@@ -36,6 +36,13 @@ Don't ask me to port any code hacks to older versions of NewerSMBW. Most hacks a
   [Randomized Lighting](/Miscellaneous/Randomized-Lighting): Randomly selects the World Map and level lightings rather than choosing based on world/zone settings.
 </details>
 
+- <details>
+  <summary>Game Bugfixes: Small fixes and improvements. These will always work in both Newer and NSMBWer+, unless specified otherwise.</summary>
+  <p></p>
+
+  [Jellybeam Lighting Fix](/Bugfixes/Jellybeam-Lighting)
+</details>
+
 ## Crediting and Usage
 If you want to use anything from this for your own projects, be sure to credit me for it (credit me as `MandyIGuess`).
 

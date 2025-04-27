@@ -1,0 +1,8 @@
+---
+source_files: [../src/jellyfishFix.cpp]
+hooks:
+  - name: JellyFishLightMaskFix
+    type: branch_insn
+    branch_type: b
+    src_addr_pal: 0x80A2EDF0
+    target_func: 'dJellyFishModel_c__draw(void *)'
