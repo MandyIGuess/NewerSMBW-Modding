@@ -37,7 +37,7 @@ Don't ask me to port any code hacks to older versions of NewerSMBW. Most hacks a
 </details>
 
 - <details>
-  <summary>Game Bugfixes: Small fixes and improvements. These will always work in both Newer and NSMBWer+, unless specified otherwise.</summary>
+  <summary>Game Bugfixes: Small fixes and improvements. All of these work for Newer and NSMBWer+, unless specified otherwise.</summary>
   <p></p>
 
   [Jellybeam Lighting Fix](/Bugfixes/Jellybeam-Lighting)
