@@ -41,6 +41,7 @@ Don't ask me to port any code hacks to older versions of NewerSMBW. Most hacks a
   <p></p>
 
   [Jellybeam Lighting Fix](/Bugfixes/Jellybeam-Lighting)
+  [(Retail) Map HUD Star Coin Fix](/Bugfixes/Map-Hud-Star-Coins)
 </details>
 
 ## Crediting and Usage
