@@ -61,19 +61,11 @@ void dKPNode_s::setupNodeExtra() {
 
 	// one-time levels
 	if ((level >= 30) && (level <= 37)) {
-		if (isUnlocked && !exitComplete) {
+		if (isUnlocked && !exitComplete)
 			colour = "cobCourseOpen";
-			//this->extra->canProcAnim = false;
-		}
 	}
 
 	// the shop
-	/*else if (level == 99) {
-		if (isUnlocked)
-			colour = "cobCourseClear"; // TODO: consider making a lighter-blue clr anim for the shops and maybe a unique model with the bag icon?
-		else 
-			colour = "cobCourseClose";
-	}*/
 	else if (level == 99) {
 		this->extra->nodePatType = 1; // shop
 	}
@@ -89,17 +81,13 @@ void dKPNode_s::setupNodeExtra() {
 				colour = "cobCourseClear";
 			else if (exitComplete || secretComplete)
 				colour = "cobCourseSecret";
-			else {
+			else
 				colour = "cobCourseOpen";
-				//this->extra->canProcAnim = false;
-			}
 		} else {
 			if (exitComplete)
 				colour = "cobCourseClear";
-			else {
+			else
 				colour = "cobCourseOpen";
-				//this->extra->canProcAnim = false;
-			}
 		}
 	}
 
