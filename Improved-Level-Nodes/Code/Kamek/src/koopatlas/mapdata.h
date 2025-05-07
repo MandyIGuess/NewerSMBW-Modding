@@ -291,6 +291,12 @@ class dKPNodeExtra_c {
 		mMtx matrix;
 		m3d::mdl_c model;
 		m3d::anmClr_c anmClr;
+		m3d::anmTexPat_c anmTexPat;
+
+		// types: 0 = regular, 1 = shop, 2 = start node LEFT, 3 = start UP, 4 = start RIGHT, 5 = start DOWN
+		u32 nodePatType;
+
+		void bindAnim(const char *name);
 };
 
 #endif

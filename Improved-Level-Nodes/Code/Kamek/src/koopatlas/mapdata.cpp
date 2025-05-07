@@ -57,19 +57,30 @@ void dKPNode_s::setupNodeExtra() {
 
 	// default: non-unlocked levels AND completed one-time levels
 	colour = "cobCourseClose";
+	this->extra->nodePatType = 0;
 
 	// one-time levels
 	if ((level >= 30) && (level <= 37)) {
-		if (isUnlocked && !exitComplete)
+		if (isUnlocked && !exitComplete) {
 			colour = "cobCourseOpen";
+			//this->extra->canProcAnim = false;
+		}
 	}
 
 	// the shop
-	else if (level == 99) {
+	/*else if (level == 99) {
 		if (isUnlocked)
 			colour = "cobCourseClear"; // TODO: consider making a lighter-blue clr anim for the shops and maybe a unique model with the bag icon?
 		else 
 			colour = "cobCourseClose";
+	}*/
+	else if (level == 99) {
+		this->extra->nodePatType = 1; // shop
+	}
+
+	// start nodes
+	else if (level >= 95) {
+		this->extra->nodePatType = (level -= 95) + 2; // 2-5: start node
 	}
 
 	else if (isUnlocked) {
@@ -78,13 +89,17 @@ void dKPNode_s::setupNodeExtra() {
 				colour = "cobCourseClear";
 			else if (exitComplete || secretComplete)
 				colour = "cobCourseSecret";
-			else
+			else {
 				colour = "cobCourseOpen";
+				//this->extra->canProcAnim = false;
+			}
 		} else {
 			if (exitComplete)
 				colour = "cobCourseClear";
-			else
+			else {
 				colour = "cobCourseOpen";
+				//this->extra->canProcAnim = false;
+			}
 		}
 	}
 
@@ -92,21 +107,45 @@ void dKPNode_s::setupNodeExtra() {
 	this->extra->mallocator.link(-1, GameHeaps[0], 0, 0x20);
 
 	nw4r::g3d::ResFile rg(getResource("cobCourse", "g3d/model.brres"));
-	nw4r::g3d::ResMdl course = rg.GetResMdl("cobCourse");
-	this->extra->model.setup(course, &this->extra->mallocator, 0x32C, 1, 0); // Use 0x32C so each node can have it's own CLR animation
+	nw4r::g3d::ResMdl resMdl = rg.GetResMdl("cobCourse");
+	this->extra->model.setup(resMdl, &this->extra->mallocator, 0x32F, 1, 0); // flags: 0x224 | 0x108 (clr0) | 0x3 (pat0)
 	this->extra->matrix.identity();
 	SetupTextures_MapObj(&this->extra->model, 0);
 
-	// Animation time
+	// Animation time, starting with CLR0
 	nw4r::g3d::ResAnmClr clrRes = rg.GetResAnmClr(colour);
-	this->extra->anmClr.setup(course, clrRes, &this->extra->mallocator, 0, 1);
+	this->extra->anmClr.setup(resMdl, clrRes, &this->extra->mallocator, 0, 1);
 
 	this->extra->anmClr.bind(&this->extra->model, clrRes, 0, 0);
 	this->extra->model.bindAnim(&this->extra->anmClr, 0.0f);
 
+	// SRT0
+	nw4r::g3d::ResAnmTexPat patRes = rg.GetResAnmTexPat("cobCourse");
+	this->extra->anmTexPat.setup(resMdl, patRes, &this->extra->mallocator, 0, 1);
+	this->extra->anmTexPat.bindEntry(&this->extra->model, &patRes, 0, 1);
+
+	this->extra->anmTexPat.setFrameForEntry(this->extra->nodePatType, 0);
+	this->extra->anmTexPat.setUpdateRateForEntry(0.0f, 0);
+
+	this->extra->model.bindAnim(&this->extra->anmTexPat);
+
 	// Animation processed in dWMMap_c::renderPathLayer() in map.cpp
 
+	// setup for newly unlocked nodes
+	if (this->isNew) {
+		this->extra->bindAnim("cobCourseClose");
+	}
+
 	this->extra->mallocator.unlink();
+}
+
+void dKPNodeExtra_c::bindAnim(const char *name) {
+	if (this->nodePatType == 0) {
+		nw4r::g3d::ResFile rg(getResource("cobCourse", "g3d/model.brres"));
+		nw4r::g3d::ResAnmClr clrRes = rg.GetResAnmClr(name);
+		this->anmClr.bind(&this->model, clrRes, 0, 0);
+		this->model.bindAnim(&this->anmClr, 0.0f);
+	}
 }
 
 void dKPNode_s::setLayerAlpha(u8 alpha) {
