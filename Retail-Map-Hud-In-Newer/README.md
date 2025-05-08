@@ -10,7 +10,7 @@ If you find any bugs, issues, or have any questions, make an issue in the Issues
 
 ![Screenshot of the new World Map HUD.](/Improved-Level-Nodes/image.png)
 
-For a video of this in-game, see [this YouTube video](https://youtu.be/pleaseMakeAyoutubeVideo)!
+<!-- For a video of this in-game, see [this YouTube video](https://youtu.be/pleaseMakeAyoutubeVideo)! -->
 
 >[!IMPORTANT]
 > Make sure you credit me (as `MandyIGuess`) if you use this for your own project!!!
