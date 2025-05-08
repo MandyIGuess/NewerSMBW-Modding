@@ -11,8 +11,8 @@ Don't ask me to port any code hacks to older versions of NewerSMBW. Most hacks a
 ## Full List of Features
 - [Improved Level Nodes](/Improved-Level-Nodes): Color animations and fixed rotation for Newer's level nodes!
 - [TPC Opening Port](/TPC-Opening-Port): Opening from NSMBW The Prankster Comets, ported to Newer 1.30 and NSMBWer+!
-<!-- - [Dynamic Koopatlas Lighting](/Dynamic-KP-Lighting): Koopatlas support for different lighting between maps/worlds! -->
-<!-- - [Retail Map HUD in Newer](/Retail-Map-Hud-In-Newer): Recreation of the retail game's World Map HUD in Koopatlas! -->
+<!-- - [Better Koopatlas Lighting](/Better-KP-Lighting): Support for using different lighting between Koopatlas maps/worlds! -->
+- [Retail Map HUD in Newer](/Retail-Map-Hud-In-Newer): Recreation of the retail game's World Map HUD in Koopatlas!
 - <details>
   <summary>Miscellaneous Menu Changes: Small new features and changes to layouts.</summary>
   <p></p>
