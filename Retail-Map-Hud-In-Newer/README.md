@@ -8,7 +8,7 @@ This replaces the Koopatlas HUD with a recreation of the retail World Map HUD!
 
 If you find any bugs, issues, or have any questions, make an issue in the Issues tab.
 
-![Screenshot of the new World Map HUD.](/Improved-Level-Nodes/image.png)
+![Screenshot of the new World Map HUD.](/Retail-Map-Hud-In-Newer/image.png)
 
 <!-- For a video of this in-game, see [this YouTube video](https://youtu.be/pleaseMakeAyoutubeVideo)! -->
 
